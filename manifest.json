@@ -1,0 +1,26 @@
+{
+  "name": "FB Page Inviter",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Invite users that like page posts.",
+  "homepage_url": "https://www.facebook.com/pg/SweetKylaBaby/posts/",
+  "icons": {
+    "48": "icons/icon48.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "jquery.min.js",
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Invite Users!"
+  },
+  "permissions": [
+    "https://www.facebook.com/*",
+    "tabs",
+    "storage"
+  ]
+}
