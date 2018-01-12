@@ -9,7 +9,7 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
 function inviteUsersInPostListPromise(items) {
   return new Promise((resolve, reject) => {
     let p = new Promise((res, rej) => {
-      function doShit(items) {
+      function clickInvite(items) {
         let data  = items.shift();
         let listObj = Array.from($(data).find('._6a ._6b'));
         if (listObj.length == 4) {
@@ -23,17 +23,17 @@ function inviteUsersInPostListPromise(items) {
           setTimeout(function() {
               $(findInv)[0].click();
               console.log('CLICK');
-              doShit(items);
+              clickInvite(items);
             }, randomDelay);
         } else {
           if (items.length) {
-            doShit(items);
+            clickInvite(items);
           } else {
             res(1);
           }
         }
       }
-      doShit(items);
+      clickInvite(items);
     });
 
     p.then(r => {
