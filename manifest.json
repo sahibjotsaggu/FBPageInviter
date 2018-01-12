@@ -10,7 +10,6 @@
   "default_locale": "en",
   "background": {
     "scripts": [
-      "jquery.min.js",
       "background.js"
     ],
     "persistent": true
